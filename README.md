@@ -1,7 +1,7 @@
 # xylophone
 
 A Xylophone application made in Flutter.
-<img src="https://github.com/shubhmaheshwari27/xylophone/assets/104754242/75301f22-ed6a-4a57-acbd-7d8d88ea3b11" "width=""height=100")
+<img src="https://github.com/shubhmaheshwari27/xylophone/assets/104754242/75301f22-ed6a-4a57-acbd-7d8d88ea3b11" width="100" height="100")
 
 ## Getting Started
 
