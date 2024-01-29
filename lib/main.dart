@@ -4,7 +4,14 @@ import 'package:flutter/material.dart';
 
 void main() => runApp(XylophoneApp());
 
+
 class XylophoneApp extends StatelessWidget {
+
+  void playSound(int soundNumber) {
+    final player = AudioPlayer();
+    player.play(AssetSource("note$soundNumber.wav"));
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -16,53 +23,45 @@ class XylophoneApp extends StatelessWidget {
             child: Column(crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
                 Expanded(
-                // child: GestureDetector()
                   child: MaterialButton(color: Colors.red,
                       onPressed: () {
-                    final player = AudioPlayer();
-                    player.play(AssetSource("note1.wav"));
+                    playSound(1);
                       }),
                 ),
                 Expanded(
                   child: MaterialButton(color: Colors.orange,
                       onPressed: ()  {
-                        final player = AudioPlayer();
-                        player.play(AssetSource("note2.wav"));
+                        playSound(2);
                       }),
                 ),
                 Expanded(
                   child: MaterialButton(color: Colors.yellow,
                       onPressed: () {
-                    final player = AudioPlayer();
-                    player.play(AssetSource("note3.wav"));
+                        playSound(3);
                       }),
                 ),
                 Expanded(
                   child: MaterialButton(color: Colors.green,
                       onPressed: () {
-                    final player = AudioPlayer();
-                    player.play(AssetSource("note4.wav"));
+                        playSound(4);
                       }),
                 ),
                 Expanded(
                   child: MaterialButton(color: Colors.teal,
                       onPressed: () {
-                    final player = AudioPlayer();
-                    player.play(AssetSource("note5.wav"));
+                        playSound(5);
                       }),
                 ),
                 Expanded(
                   child: MaterialButton(color: Colors.blue,
                       onPressed: () {
-                    final player = AudioPlayer();
-                    player.play(AssetSource("note6.wav"));
+                        playSound(6);
                       }),
                 ),
                 Expanded(
                   child: MaterialButton(color: Colors.purple,
                       onPressed: () {
-                    final player = AudioPlayer();
-                    player.play(AssetSource("note7.wav"));
+                        playSound(7);
                       }),
                 ),
               ],
